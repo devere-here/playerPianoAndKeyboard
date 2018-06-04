@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css?family=Share+Tech+Mono');
+#container{
+    background-color: darkgray;
+    height: 575px;
+    width: 800px;
+    margin: 0px auto 0px auto;
+    vertical-align: middle;
+    border: black 1px solid;
+}
+#ctrlPanel{
+    height: 210px;
+}
+#ppSwitch{
+    width: 33%;
+    height: 200px;
+    display: inline-block;
+    float: left;
+    position: relative;
+}
+#sectionB{
+    height: 25px;
+    position: absolute;
+    width: 240px;
+    top: 82%;
+}
+#screenSection{
+    width: 33%;
+    height: 200px;
+    display: inline-block;
+    float: left;
+    position: relative;
+}
+#mainScreen{
+    height: 150px;
+    width: 235px;
+    border: black 1px solid;
+    margin: 10px auto 0px auto;
+    background-color: #9bbc0f;
+    color: #0f380f;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 22px;
+    position: absolute;
+    left: 3%;
+}
+#top{
+    height: 75px;
+}
+#top > h3{
+    background-color: #0f380f;
+    color: #9bbc0f;
+    margin: 5px 0px 5px 0px;
+    text-align: center;
+}
+#bottom{
+    height: 75px;
+}
+#sectionA{
+    position:absolute;
+    left: 20%;
+    top: 30%; 
+    height: 80px;
+}
+.header{
+    display: block;
+    font-size: 20px;
+}
+.switch{
+    position: absolute;
+    top: 50%;
+    left: 30%;
+}
+.switch-btn{
+    width: 60px;
+    height: 30px;
+    background-color: #e5e5e5;
+    position: relative;
+    cursor: pointer;
+    margin: 0px auto 0px auto;
+}
+.switch-btn:before{
+    position: absolute;
+    height: 24px;
+    width: 24px;
+    background-color: red;
+    border: black solid 1px;
+    left: 2px;
+    top: 2px;
+    content:"";
+    transition: all 150ms ease-out;
+}
+input[type=checkbox]:checked + .switch-btn:before{
+    left: 32px;
+}
+.switch input{
+    display: none;
+} 
+.label{
+    font-size: 20px;
+    background-color: white;
+    padding: 2px;
+    border: 1px black solid;
+}
+.switchLabel{
+    display: inline;
+}
+#on{
+    position: absolute;
+    top: 51%;
+    left: 72%;
+}
+#off{
+    position: absolute;
+    top: 51%;
+    left: 5%;
+}
+#songSelector{
+    width: 33%;
+    height: 200px;
+    position: absolute;  
+    display: inline-block;
+    float: left;
+}
+#sectionC{
+    position: absolute;
+    top: 30%;
+    left: -2%;
+    margin: 0px 3px 0px 3px;
+}
+#sideScreen{
+    height: 40px;
+    width: 200px;
+    border: black solid 1px; 
+    display: inline-block;
+    vertical-align: bottom;
+    line-height: 40px;
+    background-color: #9bbc0f;
+    color: #0f380f;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 18px;
+}
+#startButton{
+    cursor: pointer;
+    background-color: red;
+    border: black 1px solid;
+    height: 20px;
+    width: 20px;
+    border-radius: 100%;
+    display: inline-block;
+    position: absolute;
+    left: 54%;
+    top: 30%;
+}
+#powerButton{
+    cursor: pointer;
+    background-color: red;
+    border: black 1px solid;
+    height: 20px;
+    width: 20px;
+    border-radius: 100%;
+    display: inline-block;
+    position: absolute;
+    top: 30%;
+    left: 15%;
+}
+#startLabel{
+    display: inline-block;
+    position: absolute;
+    top: 20%;
+    left: 65%;
+}
+#powerLabel{
+    display: inline-block;
+    position: absolute;
+    top: 20%;
+    left: 25%;
+}
+#buttons{
+    display: inline-block;
+    width: 30px;
+    cursor: pointer;
+}
+.songButton{
+    width: 30px;
+    height: 20px;
+    background-color: red;
+    margin: 0px;
+    border: black solid 1px;
+    text-align: center;
+}
+#keyboard{
+    margin: 0px auto 0px auto;
+    width: 738px;
+    position: relative;
+    background-color: gray; 
+}
+.whiteKey{
+    display: inline-block;
+    background-color: white;
+    width: 100px;
+    height: 360px;
+    border: black 1px solid;
+    text-align: center;
+    vertical-align: bottom;
+    line-height:550px;
+    font-size: 28px;
+}
+.blackKey{
+    width: 54px;
+    height: 234px;
+    text-align: center;
+    line-height: 370px;
+    color: white;
+    background: black;
+    background: -webkit-linear-gradient(#555, #000); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#555, #000); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#555, #000); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#555, #000); /* Standard syntax */
+    display: inline-block;
+    position: absolute;
+    top: 0%;
+}
+.whiteKey:active, .whiteActive{
+    background: yellow;
+    background: -webkit-linear-gradient(#FFF, #CCC); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#FFF, #CCC); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#FFF, #CCC); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#FFF, #CCC); /* Standard syntax */
+    line-height: 555px;
+}
+.blackKey:active, .blackActive{
+    background: yellow;
+    background: -webkit-linear-gradient(#000, #555); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#000, #555); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#000, #555); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#000, #555); /* Standard syntax */
+    line-height: 375px;
+}
+#cSharp{
+    left: 10.5%;
+}
+#dSharp{
+    left: 24.75%
+}
+#fSharp{
+    left: 53.25%;
+}
+#gSharp{
+    left: 67.50%;
+}
+#aSharp{
+    left: 81.75%;
+}

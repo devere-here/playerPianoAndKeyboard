@@ -1,0 +1,58 @@
+<head>
+    <title>Keyboard And Player Piano</title>
+    <link rel="stylesheet" href="main.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="actions.js" async></script>
+</head>
+
+<div id="container">
+    <div id="ctrlPanel">
+        <div id="ppSwitch">
+        <div id="sectionA">
+            <label class="header label">Player Piano Mode</label>
+            <label class="switchLabel label" id="off">Off</label>
+            <label class="switch">
+            <input type="checkbox" value="pianoSwitch"/>
+            <div class="switch-btn"></div>
+            </label>
+            <label class="switchLabel label" id="on">On</label>
+        </div>
+        </div>
+        <div id="screenSection">
+        <div id="mainScreen">
+            <div id="top"><h3></h3></div>
+            <div id="bottom"></div>
+        </div>
+        <div id="sectionB">
+            <div id="powerButton"></div>
+            <label id="powerLabel" class="label">Power</label>
+            <div id="startButton"></div>
+            <label id="startLabel" class="label">Start</label>
+        </div>
+        </div>
+        <div id="songSelector">
+        <div id="sectionC">
+            <label class="header label">Song Selector</label>
+            <div id="sideScreen"></div>
+            <div id="buttons">
+            <div id="up" class="songButton">▲</div>
+            <div id="down" class="songButton">▼</div>
+            </div>
+        </div>
+        </div>  
+    </div> 
+    <div id="keyboard">
+        <div class="whiteKey" id="c" data-number="0">C</div>
+        <div class="whiteKey" id="d" data-number="1">D</div>
+        <div class="whiteKey" id="e" data-number="2">E</div>
+        <div class="whiteKey" id="f" data-number="3">F</div>
+        <div class="whiteKey" id="g" data-number="4">G</div>
+        <div class="whiteKey" id="a" data-number="5">A</div>
+        <div class="whiteKey" id="b" data-number="6">B</div>
+        <div class="blackKey" id="cSharp" data-number="7">C#/D&#9837</div>
+        <div class="blackKey" id="dSharp" data-number="8">D#/E&#9837</div>
+        <div class="blackKey" id="fSharp" data-number="9">F#/G&#9837</div>
+        <div class="blackKey" id="gSharp" data-number="10">G#/A&#9837</div>
+        <div class="blackKey" id="aSharp" data-number="11">A#/B&#9837</div>
+    </div>
+</div>
